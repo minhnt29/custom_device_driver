@@ -1,0 +1,15 @@
+/dts-v1/;
+
+/ {
+    compatible = "ti,beaglebone",
+
+    &i2c2 {
+        status = "okay";
+        
+        ssd1306: oled@3c {
+            compatible = "solomon,ssd1306";  // ← Key quan trọng!
+            reg = <0x3c>;                     // ← I2C address
+            status = "okay";
+        };
+    };
+}
