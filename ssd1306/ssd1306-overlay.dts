@@ -7,7 +7,7 @@
         status = "okay";
         
         ssd1306: oled@3c {
-            compatible = "solomon,ssd1306";  // ← Key quan trọng!
+            compatible = "minhnt29,ssd1306";  // ← Key
             reg = <0x3c>;                     // ← I2C address
             status = "okay";
         };
