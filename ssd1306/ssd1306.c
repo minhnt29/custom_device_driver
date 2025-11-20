@@ -40,15 +40,24 @@
 #define SSD1306_HEIGHT 64
 #define SSD1306_BUFFER_SIZE (SSD1306_WIDTH * SSD1306_HEIGHT / 8)
 
+/*
+ * I2C Device Structure
+ */
+struct ssd1306_device {
+    struct i2c_client *i2c_client;
+    u8 *buffer;
+};
+
+
 
 int ssd1306_probe(struct i2c_client *client, const struct i2c_device_id *id)
 {
     return 0;
 }
 
-int ssd1306_remove(struct i2c_client *client)
+void ssd1306_remove(struct i2c_client *client)
 {
-    return 0;
+    
 }
 
 
