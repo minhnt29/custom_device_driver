@@ -6,3 +6,4 @@ build/
 *.o
 *.order
 *.symvers
+*.o.d
